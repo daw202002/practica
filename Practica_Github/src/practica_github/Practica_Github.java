@@ -18,7 +18,7 @@ public class Practica_Github {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    String cadena;
+        String cadena;
         String caracter;
         int cont=0;
         Scanner sc=new Scanner (System.in);
@@ -26,13 +26,17 @@ public class Practica_Github {
         System.out.println("Caracter: ");
         caracter=sc.nextLine();
         System.out.println("Escribe cadena: ");
-        cadena=sc.nextLine();
+        cadena=sc.nextLine();      
         
+        System.out.println(caracter+" aparece "+ncadena(caracter, cadena)+" veces");
+    }
+    public static int ncadena(String caracter, String cadena){
+        int cont=0;
         for (int i=0; i<cadena.length();i++){
             if (cadena.charAt(i)==caracter.charAt(0))
                 cont++;
         }
-        
-        System.out.println(caracter+" aparece "+cont+" veces");
+        return cont;
     }
+    
 }
