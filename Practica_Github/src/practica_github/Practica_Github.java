@@ -27,9 +27,17 @@ public class Practica_Github {
         caracter=sc.nextLine();
         System.out.println("Escribe cadena: ");
         cadena=sc.nextLine();      
-        
+        /**
+         * Descripcion
+         */        
         System.out.println(caracter+" aparece "+ncadena(caracter, cadena)+" veces");
     }
+    /**
+     * 
+     * @param caracter
+     * @param cadena
+     * @return 
+     */
     public static int ncadena(String caracter, String cadena){
         int cont=0;
         for (int i=0; i<cadena.length();i++){
